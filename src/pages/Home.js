@@ -206,7 +206,7 @@ class Home extends React.Component {
     headerStyle: { ...styles.navbar },
     title: '',
     headerLeft: () => (
-      <Button appearance="ghost" style={{ ...styles.headerRight, marginLeft: 10 }} onPress={() => navigation.navigate('DrawerOpen')}
+      <Button appearance="ghost" style={{ ...styles.headerRight, marginLeft: 10 }} onPress={() => navigation.toggleDrawer}
         icon={(style) => <Icon name="grid" size={28} style={{ ...style, width: 28, height: 28, }} />}>
       </Button>
     ),
